@@ -1,0 +1,8 @@
+{
+  "name": "Hisabna",
+  "description": "A personal finance tracking web application designed to help users manage their income and expenses with ease. The app prioritizes privacy with local data storage and offers smart features like AI-powered budget suggestions. The interface is fully in Arabic and designed for RTL.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "prompt": ""
+}

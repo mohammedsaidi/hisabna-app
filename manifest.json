@@ -1,0 +1,17 @@
+{
+  "name": "Hisabna | حسابنا",
+  "short_name": "Hisabna",
+  "description": "تطبيق ويب شخصي لتتبع الشؤون المالية، مع تخزين محلي للبيانات ويعمل دون اتصال بالإنترنت.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#1f2937",
+  "theme_color": "#14b8a6",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "48x48 32x32 24x24 16x16",
+      "type": "image/svg+xml"
+    }
+  ]
+}

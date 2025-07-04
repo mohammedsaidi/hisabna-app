@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hisabna | حسابنا</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="/favicon.ico" type="image/svg+xml">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#14b8a6">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Tajawal', 'sans-serif'],
+            },
+            colors: {
+              // Dark theme colors
+              'brand-primary': '#14b8a6', // teal-500
+              'brand-secondary': '#0f766e', // teal-700
+              'brand-accent': '#facc15', // yellow-400
+              'brand-background': '#1f2937', // gray-800
+              'brand-surface': '#374151', // gray-700
+              'brand-text-primary': '#f9fafb', // gray-50
+              'brand-text-secondary': '#d1d5db', // gray-300
+              
+              // New Light theme colors for a softer look
+              'light-background': '#f8f7f4',
+              'light-surface': '#ffffff',
+              'light-text-primary': '#1f2937',
+              'light-text-secondary': '#6b7280',
+              'light-border': '#e5e7eb',
+              'light-interactive': '#f3f4f6',
+              'light-interactive-darker': '#e5e7eb',
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom": "https://esm.sh/react-dom@^19.1.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.7.0",
+    "recharts": "https://esm.sh/recharts@^3.0.2",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="font-sans bg-light-background text-light-text-primary dark:bg-brand-background dark:text-brand-text-primary">
+    <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then(registration => {
+              console.log('ServiceWorker registration successful with scope: ', registration.scope);
+            })
+            .catch(error => {
+              console.log('ServiceWorker registration failed: ', error);
+            });
+        });
+      }
+    </script>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
